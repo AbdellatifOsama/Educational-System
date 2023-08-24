@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 import matplotlib.pyplot as plt
 import numpy as np
 from AuthenticationModule.StudentAuth import StudentLogin
+from AuthenticationModule import MainAuth
 from Environment import Db_Queries
 from Helpers import OpenFilesHelper
 import sqlite3
@@ -41,7 +42,7 @@ def start(TkinterClassType):
     # --
 
     def Logout():
-        StudentLogin.LoginVisible()
+        MainAuth.MainAuthVisible()
         root.destroy()
 
     def standard_frames():

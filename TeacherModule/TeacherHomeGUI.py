@@ -3,6 +3,7 @@ from PIL import Image, ImageTk
 from tkinter import ttk as t, messagebox, filedialog
 from Environment import Db_Queries
 from AuthenticationModule.TeacherAuth import TeacherLogin
+from AuthenticationModule import MainAuth
 from Helpers import OpenFilesHelper
 import time
 from tkinter.ttk import Combobox
@@ -45,7 +46,7 @@ def start(TkinterClassType):
     # **********************
 
     def Logout():
-        TeacherLogin.LoginVisible()
+        MainAuth.MainAuthVisible()
         root.destroy()
 
 

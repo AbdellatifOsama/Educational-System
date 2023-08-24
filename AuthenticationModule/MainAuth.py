@@ -57,7 +57,7 @@ def MainAuthDestroy():
     base.withdraw()
 
 
-def LoginVisible():
+def MainAuthVisible():
     base.deiconify()
 
 
